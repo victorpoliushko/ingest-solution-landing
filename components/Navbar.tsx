@@ -1,12 +1,13 @@
 import { NAV_LINKS } from "@/constants"
 import Image from "next/image"
 import Link from "next/link"
+import '../app/globals.css';
 
 const Navbar = () => {
   return (
-    <nav className="flexBetween max-container padding-container relative z-30 py-5">
+    <nav className="flex items-center justify-between max-container padding-container relative z-30 py-5">
       <Link href="/">
-        <Image src="/ingest_solution_logo.png" alt="logo" width={274} height={50}/>
+        <Image src="/ingest_solution_logo.png" alt="logo" width={274} height={150}/>
       </Link>
       <ul className="hidden h-full gap-12 lg:flex">
         {NAV_LINKS.map(link => (
