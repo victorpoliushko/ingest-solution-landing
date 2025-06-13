@@ -10,6 +10,18 @@
   box-sizing: border-box;
 }
 
+a {
+  color: inherit; /* Inherit color from parent, or set a specific color like #000 */
+  text-decoration: none; /* Removes underline */
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: inherit; /* Ensure hover/focus states also inherit or use a defined color */
+  text-decoration: none; /* Ensures no underline on hover/focus */
+}
+
 body {
   font-family: Inter;
 }
@@ -23,6 +35,9 @@ body {
   max-width: 1440px;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+  position: relative;
+  z-index: 30;
+  padding: 1.5rem 1.25rem;
 }
 
 @media (min-width: 1024px) {
@@ -37,6 +52,18 @@ body {
   .navbar {
     padding-left: 0;
     padding-right: 0;
+  }
+}
+
+.navbar-ul {
+  display: none;
+  height: 100%;
+  gap: 3rem;
+}
+
+@media (min-width: 1024px) {
+  .lg\:flex {
+    display: flex;
   }
 }
 
