@@ -2,6 +2,7 @@ import { NAV_LINKS } from "@/constants"
 import Image from "next/image"
 import Link from "next/link"
 import '../app/globals.css';
+import Button from "./Button";
 
 const Navbar = () => {
   return (
@@ -9,13 +10,21 @@ const Navbar = () => {
       <Link href="/">
         <Image src="/ingest_solution_logo.png" alt="logo" width={274} height={150}/>
       </Link>
-      <ul className="navrbar-ul hidden h-full gap-12 lg:flex">
+      <ul className="navbar-ul">
         {NAV_LINKS.map(link => (
-          <Link href={link.href} key={link.key} className="regular-16 text-gray-50 flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold">
+          <Link href={link.href} key={link.key}>
             {link.label}
           </Link>
         ))}
       </ul>
+      <div className="contact-button">
+        <Button 
+        type="button"
+        title="Contact Us"
+        icon="/phone.png"
+        variant="btn_dark_green"
+        />
+      </div>
     </nav>
   )
 }
