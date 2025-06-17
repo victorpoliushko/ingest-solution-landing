@@ -19,12 +19,20 @@ const Navbar = () => {
       </ul>
       <div className="contact-button">
         <Button 
-        type="button"
-        title="Contact Us"
-        icon="/phone.png"
-        variant="btn_dark_green"
+          type="button"
+          title="Contact Us"
+          icon="/phone.png"
+          variant="btn_dark_green"
         />
       </div>
+
+      <Image
+        src="/menu.png"
+        alt="menu"
+        width={32}
+        height={32}
+        className="navbar-img"
+       />
     </nav>
   )
 }
