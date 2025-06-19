@@ -1,8 +1,11 @@
 import React from 'react'
+import '../app/globals.css';
 
 const TestHero = () => {
   return (
-    <div>TestHero</div>
+    <section className='hero-section'>
+      <div className='hero-map'/>
+    </section>
   )
 }
 
