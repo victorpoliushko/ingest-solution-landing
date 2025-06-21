@@ -156,8 +156,6 @@ button {
   gap: 5rem;
   padding-top: 2.5rem;
   padding-bottom: 8rem;
-  border-width: 12px;
-  border-color: #ef4444;
 }
 
 @media (min-width: 768px) {
@@ -191,6 +189,47 @@ button {
 .hero-body {
   position: relative;
   
+}
+
+.hero-title {
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+@media (min-width: 1024px) {
+  .hero-title {
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 120%;
+  }
+}
+
+.hero-description {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 4rem;
+  color: #7B7B7B;
+}
+
+@media (min-width: 1280px) {
+  .hero-description {
+    max-width: 520px;
+  }
+}
+
+.hero-outer-block {
+  margin-top: 2.75rem;
+  margin-bottom: 2.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+.hero-inner-block {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 /* 
