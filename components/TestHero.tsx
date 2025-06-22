@@ -1,6 +1,7 @@
 import React from 'react';
 import '../app/globals.css';
 import Image from 'next/image';
+import Button from './Button';
 
 const TestHero = () => {
   return (
@@ -24,6 +25,23 @@ const TestHero = () => {
               />
             ))}
           </div>
+          <p className="hero-review-count">
+            2
+            <span className="hero-review-title">Excellent reviwes</span>
+          </p>
+        </div>
+        <div className="hero-review-buttons flex flex-col w-full gpa-3 sm:flex-row">
+          <Button
+            type="button"
+            title="Get App"
+            variant="btn_green"
+           />
+           <Button
+            type="button"
+            title="How it works?"
+            icon="/circle-play.svg"
+            variant="btn_white_text"
+           />
         </div>
       </div>
     </section>
