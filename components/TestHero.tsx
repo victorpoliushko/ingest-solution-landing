@@ -44,6 +44,9 @@ const TestHero = () => {
            />
         </div>
       </div>
+      <div className="hero-review-dynamic relative flex flex-1 items-start border-2 border-blue-500">
+        <div className="hero-review-dynamic-inner relative z-20 w-[268px] flex-col gap-8 rounded-3xl bg-green-90 px-7 py-8"></div>
+      </div>
     </section>
   )
 }
