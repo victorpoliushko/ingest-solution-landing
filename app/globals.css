@@ -360,16 +360,22 @@ button {
   flex-direction: column;
 }
 
-.hero-review-dynamic-tree {
+.hero-review-location-div {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.hero-review-dynamic-tree > p {
+.hero-review-location-div > p {
   font-size: 16px;
   font-weight: 400;
   color: #A2A2A2;
+}
+
+.hero-review-location-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
 }
 
 

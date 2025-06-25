@@ -48,13 +48,14 @@ const TestHero = () => {
         <div className="hero-review-dynamic-inner relative z-20 w-[268px] flex-col gap-8 rounded-3xl bg-green-90 px-7 py-8">
           <div className="hero-review-dynamic-two">
             {/* some css problems here */}
-            <div className="hero-review-dynamic-tree">
+            <div className="hero-review-location-div">
               <p>
                 Location
                 <Image src="/close.svg" alt="close" width={24} height={24}
                 />
               </p>
             </div>
+            <p className="hero-review-location-title">Ukraine</p>
           </div>
         </div>
       </div>
