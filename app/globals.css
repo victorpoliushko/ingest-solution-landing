@@ -366,7 +366,7 @@ button {
   justify-content: space-between;
 }
 
-.hero-review-location-div > p {
+.hero-review-location-title-name {
   font-size: 16px;
   font-weight: 400;
   color: #A2A2A2;
