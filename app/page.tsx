@@ -1,5 +1,5 @@
 import GetApp from '@/components/GetApp'
-import TestCamp from '@/components/TestCamp'
+import TestCamp from '@/components/ProjectsHero'
 import TestFeatures from '@/components/TestFeatures'
 import TestGuide from '@/components/TestGuide'
 import TestHero from '@/components/TestHero'
