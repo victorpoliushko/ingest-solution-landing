@@ -6,7 +6,6 @@ import Button from "./Button";
 const TestHero = () => {
   return (
     <section className="hero-section">
-      {/* <div className='hero-map'/> */}
       <div className="hero-body">
         <h1 className="hero-title">Let's make products together</h1>
         <p className="hero-description">
@@ -45,7 +44,6 @@ const TestHero = () => {
       <div className="hero-review-dynamic">
         <div className="hero-review-dynamic-inner">
           <div className="hero-review-dynamic-two">
-            {/* some css problems here */}
             <div className="hero-review-location-div">
               <p className="hero-review-location-title-name">
                 Country

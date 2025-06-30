@@ -507,6 +507,42 @@ button {
   color: #fff;
 }
 
+.people-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.people-block-1 {
+  display: flex;
+  margin-left: -1rem;
+  overflow: hidden;
+}
+
+.people-image {
+  display: inline-block;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 9999px;
+}
+
+.people-text {
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .people-text {
+    font-size: 20px;
+    font-weight: 700;
+  }
+}
+
+
+
+
 /* 
 
 @layer utilities {

@@ -1,6 +1,10 @@
 import React from "react";
 import invappBg from  "../public/invapp-bg.png";
 import baSiteBg from "../public/BAsite-bg.png";
+import { PEOPLE_URL } from "@/constants";
+import Image from "next/image";
+
+const reviews = 4;
 
 interface ProjectProps {
   backgroundImage: string;
@@ -26,6 +30,22 @@ const Project = ({
           <p className="project-title-text-subtitle">{subtitle}</p>
         </div>
       </div>
+
+      <div className="people-block">
+            <span className="people-block-1">
+              {PEOPLE_URL.map(url => (
+                <Image
+                  className="people-image"
+                  src={url}
+                  key={url}
+                  alt='person'
+                  width={52}
+                  height={52}
+                />
+              ))}
+            </span>
+            <p className="people-text">{reviews} reviews</p>
+          </div>
     </div>
   </div>)
 };
