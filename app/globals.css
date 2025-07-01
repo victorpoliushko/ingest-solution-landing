@@ -516,8 +516,11 @@ button {
 
 .people-block-1 {
   display: flex;
-  margin-left: -1rem;
   overflow: hidden;
+}
+
+.people-block-1 > :not([hidden]) ~ :not([hidden]) {
+  margin-left: -1rem;
 }
 
 .people-image {

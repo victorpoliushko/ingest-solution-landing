@@ -4,20 +4,20 @@ import baSiteBg from "../public/BAsite-bg.png";
 import { PEOPLE_URL } from "@/constants";
 import Image from "next/image";
 
-const reviews = 4;
-
 interface ProjectProps {
   backgroundImage: string;
   title: string;
   subtitle: string;
-  downloads: string;
+  reviews: string;
+  people: string[]
 };
 
 const Project = ({
   backgroundImage,
   title,
   subtitle,
-  downloads,
+  reviews,
+  people
 }: ProjectProps) => {
   return (<div className="project" style={{ backgroundImage: `url(${backgroundImage})` }}>
     <div className="project-title-block">
@@ -32,20 +32,20 @@ const Project = ({
       </div>
 
       <div className="people-block">
-            <span className="people-block-1">
-              {PEOPLE_URL.map(url => (
-                <Image
-                  className="people-image"
-                  src={url}
-                  key={url}
-                  alt='person'
-                  width={52}
-                  height={52}
-                />
-              ))}
-            </span>
-            <p className="people-text">{reviews} reviews</p>
-          </div>
+        <span className="people-block-1">
+          {people.map(url => (
+            <Image
+              className="people-image"
+              src={url}
+              key={url}
+              alt='person'
+              width={52}
+              height={52}
+            />
+          ))}
+        </span>
+        <p className="people-text">{reviews}</p>
+      </div>
     </div>
   </div>)
 };
@@ -58,7 +58,15 @@ const ProjectsHero = () => {
           backgroundImage={invappBg.src}
           title="InvApp"
           subtitle="The only investment tracking app you need"
-          downloads="500+ downloads"
+          reviews="4 reviews"
+          people={PEOPLE_URL}
+        />
+        <Project
+          backgroundImage={baSiteBg.src}
+          title="InvApp"
+          subtitle="The only investment tracking app you need"
+          reviews="1 review"
+          people={[PEOPLE_URL[0]]}
         />
       </div>
     </section>
