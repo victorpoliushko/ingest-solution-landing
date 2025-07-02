@@ -543,6 +543,80 @@ button {
   }
 }
 
+.dont-know-block {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 2.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .dont-know-block {
+    margin-top: -15rem;
+    margin-right: 1.5rem;
+  }
+}
+
+.dont-know-block-inner {
+  background-color: #30AF5B;
+  padding: 2rem;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .dont-know-block-inner {
+    max-width: 500px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .dont-know-block-inner {
+    max-width: 734px;
+    border-radius: 2.5rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+.dont-know-title {
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .dont-know-title {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .dont-know-title {
+    font-size: 64px;
+  }
+}
+
+.dont-know-subtitle {
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 1.25rem;
+  color: #fff;
+}
+
+@media (min-width: 1280px) {
+  .dont-know-subtitle {
+    font-size: 16px;
+  }
+}
+
 
 
 

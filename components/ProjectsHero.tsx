@@ -69,6 +69,18 @@ const ProjectsHero = () => {
           people={[PEOPLE_URL[0]]}
         />
       </div>
+
+      <div className="dont-know-block">
+        <div className="dont-know-block-inner">
+          <h2 className="dont-know-title">
+            <strong>Don't know</strong> where to start?
+          </h2>
+          <p className="dont-know-subtitle">Whether you're launching a new product, scaling your business, or optimizing existing systems — we're here to help.
+Our team of experienced professionals will guide you through every step, from idea to implementation.
+Get in touch today to receive a detailed overview of our services and discover the real impact we can make on your growth and success.
+</p>
+        </div>
+      </div>
     </section>
   );
 };
