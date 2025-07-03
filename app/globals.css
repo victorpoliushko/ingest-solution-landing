@@ -617,7 +617,75 @@ button {
   }
 }
 
+.dev-route-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 
+.dev-route-pre-title {
+  border-width: 2px;
+  border-color: #ef4444;
+  padding-bottom: 6rem;
+  width: 100%;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.dev-route-pre-title-p {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: -0.25rem;
+  margin-bottom: 0.75rem;
+  color: #30AF5B;
+}
+
+.dev-route-title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.25rem;
+}
+
+@media (min-width: 1024px) {
+  .dev-route-title {
+    gap: 2.5rem;
+  }
+}
+
+.dev-route-title-h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+@media (min-width: 1024px) {
+  .dev-route-title-h2 {
+    font-size: 64px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .dev-route-title-h2 {
+    max-width: 390px;
+  }
+}
+
+.dev-route-title-p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #7B7B7B;
+}
+
+@media (min-width: 1280px) {
+  .dev-route-title-p {
+    max-width: 520px;
+  }
+}
 
 
 /* 
