@@ -687,6 +687,25 @@ button {
   }
 }
 
+.development-image-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1280px;
+  position: relative;
+  width: 100%;
+  border-width: 2px;
+  border-color: #3b82f6;
+}
+
+.development-image {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 2.5rem;
+}
+
+
 
 /* 
 

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const TestGuide = () => {
@@ -22,6 +23,16 @@ const TestGuide = () => {
             something great together.
           </p>
         </div>
+      </div>
+
+      <div className="development-image-block">
+        <Image
+          src="/developer.jpg"
+          alt="developer"
+          width={1440}
+          height={580}
+          className="development-image" 
+        />
       </div>
     </section>
   );
