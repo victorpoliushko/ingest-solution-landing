@@ -33,6 +33,18 @@ const TestGuide = () => {
           height={580}
           className="development-image" 
         />
+
+        <div className="development-image-text-block">
+          <div className="development-image-text-block-2">
+            <div className="development-image-text-block-3">
+              <div className="development-image-text-block-4">
+                <p className="development-image-text-block-4-p-1">Target</p>
+                <p className="development-image-text-block-4-p-2">Dev time</p>
+              </div>
+              <p className="development-image-text-block-2-p-1">You working application</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
