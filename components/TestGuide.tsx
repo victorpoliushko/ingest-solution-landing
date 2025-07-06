@@ -35,13 +35,25 @@ const TestGuide = () => {
         />
 
         <div className="development-image-text-block">
+          <Image
+            src="/path.png"
+            alt="path"
+            width={16}
+            height={160}
+            className="development-image-text-block-path"
+          />
           <div className="development-image-text-block-2">
             <div className="development-image-text-block-3">
               <div className="development-image-text-block-4">
                 <p className="development-image-text-block-4-p-1">Target</p>
-                <p className="development-image-text-block-4-p-2">Dev time</p>
+                <p className="development-image-text-block-4-p-2">Fast delivery</p>
               </div>
               <p className="development-image-text-block-2-p-1">You working application</p>
+            </div>
+            
+            <div className="development-image-text-block-3">
+              <p className="development-image-text-block-4-p-1">Target</p>
+              <h4 className="development-image-text-block-4-h4-1">Plannig phase</h4>
             </div>
           </div>
         </div>
