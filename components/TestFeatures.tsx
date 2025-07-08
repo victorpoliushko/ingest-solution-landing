@@ -7,7 +7,7 @@ const TestFeatures = () => {
       <div className="features-outer">
         <div className="features-inner">
           <Image
-            src="/dots.jpg"
+            src="/dots2.png"
             alt="features"
             width={400}
             height={1000}

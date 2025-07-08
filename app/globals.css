@@ -767,15 +767,12 @@ button {
 }
 
 .features {
-  border-width: 2px;
-  border-color: #ef4444;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding: 6rem 0;
 }
 
 .features-outer {
