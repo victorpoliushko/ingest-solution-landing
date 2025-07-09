@@ -818,7 +818,7 @@ button {
   z-index: 10;
   display: none;
   max-width: 1500px;
-  transform: rotate(15deg);
+  /* transform: rotate(15deg); */
 }
 
 @media (min-width: 768px) {
