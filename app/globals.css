@@ -801,45 +801,67 @@ button {
   }
 }
 
-.features-inner {
+.features-inner-left {
   display: flex;
   flex: 1 1 0%;
 }
 
 @media (min-width: 1024px) {
-  .features-inner {
+  .features-inner-left {
     min-height: 900px;
   }
 }
 
-.features-image {
+.features-image-left {
   position: absolute;
   top: 13%;
   z-index: 10;
   display: none;
   max-width: 1500px;
-  /* transform: rotate(15deg); */
 }
 
 @media (min-width: 768px) {
-  .features-image {
+  .features-image-left {
     left: -4rem;
   }
 }
 
 @media (min-width: 1024px) {
-  .features-image {
+  .features-image-left {
     display: flex;
   }
 }
 
 @media (min-width: 1792px) {
-  .features-image {
+  .features-image-left {
     left: 5rem;
   }
 }
 
+.features-outer-right {
+  z-index: 20;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
 
+@media (min-width: 1024px) {
+  .features-outer-right {
+    width: 60%;
+  }
+}
+
+.features-outer-right-h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+@media (min-width: 1024px) {
+  .features-outer-right-h2 {
+    font-size: 64px;
+  }
+}
 
 
 /* 

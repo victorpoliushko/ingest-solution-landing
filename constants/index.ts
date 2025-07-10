@@ -18,32 +18,32 @@ export const PEOPLE_URL = [
 // FEATURES SECTION
 export const FEATURES = [
   {
-    title: 'Real maps can be offline',
-    icon: '/map.svg',
-    variant: 'green',
+    title: 'Discover the Core Problem',
+    icon: '/features_glass.png',
+    variant: 'blue',
     description:
-      'We provide a solution for you to be able to use our application when climbing, yes offline maps you can use at any time there is no signal at the location',
+      'We dive deep to understand your unique challenges and goals, uncovering the root of the problem to ensure our solutions are perfectly aligned with your business needs. This foundational step guarantees we build the right product, not just any product.',
   },
   {
-    title: 'Set an adventure schedule',
-    icon: '/calendar.svg',
-    variant: 'green',
+    title: 'Strategize with the Right Tools',
+    icon: '/features_tools2.png',
+    variant: 'blue',
     description:
-      "Schedule an adventure with friends. On holidays, there are many interesting offers from Hilink. That way, there's no more discussion",
+      "Leveraging our expertise, we meticulously select the optimal technologies, frameworks, and methodologies. This ensures a robust, scalable, and efficient architecture that propels your project forward and stands the test of time.",
   },
   {
-    title: 'Technology using augment reality',
-    icon: '/tech.svg',
-    variant: 'green',
+    title: 'Agile & Efficient Development',
+    icon: '/features_development.png',
+    variant: 'blue',
     description:
-      'Technology uses augmented reality as a guide to your hiking trail in the forest to the top of the mountain. Already supported by the latest technology without an internet connection',
+      'Our expert team transforms concepts into reality through agile development cycles. We prioritize clean code, best practices, and continuous integration, delivering high-quality, fully functional solutions on schedule and within budget.',
   },
   {
-    title: 'Many new locations every month',
-    icon: '/location.svg',
-    variant: 'orange',
+    title: 'Ongoing Support & Maintenance',
+    icon: '/features_maintenance.png',
+    variant: 'green',
     description:
-      'Lots of new locations every month, because we have a worldwide community of climbers who share their best experiences with climbing',
+      'Our commitment extends beyond launch. We provide comprehensive post-development support, including regular updates, performance monitoring, and rapid issue resolution, ensuring your software remains secure, efficient, and up-to-date with evolving demands.',
   },
 ];
 
