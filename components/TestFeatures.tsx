@@ -48,7 +48,13 @@ const FeatureItem = ({
   variant,
   description,
 }: FeatureItem) => {
-  return <div className="">{title}</div>;
+  return (
+    <li className="feature-item-li">
+      <div className="feature-item-li-div">
+        <Image src={icon} alt="fetures-icon" width={36} height={36}/>
+      </div>
+    </li>
+  )
 };
 
 export default TestFeatures;
