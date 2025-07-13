@@ -19,28 +19,28 @@ export const PEOPLE_URL = [
 export const FEATURES = [
   {
     title: 'Discover the Core Problem',
-    icon: '/features_glass.png',
+    icon: '/glass.png',
     variant: 'blue',
     description:
       'We dive deep to understand your unique challenges and goals, uncovering the root of the problem to ensure our solutions are perfectly aligned with your business needs. This foundational step guarantees we build the right product, not just any product.',
   },
   {
     title: 'Strategize with the Right Tools',
-    icon: '/features_tools2.png',
+    icon: '/tool.png',
     variant: 'blue',
     description:
       "Leveraging our expertise, we meticulously select the optimal technologies, frameworks, and methodologies. This ensures a robust, scalable, and efficient architecture that propels your project forward and stands the test of time.",
   },
   {
     title: 'Agile & Efficient Development',
-    icon: '/features_development.png',
+    icon: '/laptop.png',
     variant: 'blue',
     description:
       'Our expert team transforms concepts into reality through agile development cycles. We prioritize clean code, best practices, and continuous integration, delivering high-quality, fully functional solutions on schedule and within budget.',
   },
   {
     title: 'Ongoing Support & Maintenance',
-    icon: '/features_maintenance.png',
+    icon: '/shield.png',
     variant: 'green',
     description:
       'Our commitment extends beyond launch. We provide comprehensive post-development support, including regular updates, performance monitoring, and rapid issue resolution, ensuring your software remains secure, efficient, and up-to-date with evolving demands.',

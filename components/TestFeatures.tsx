@@ -18,7 +18,7 @@ const TestFeatures = () => {
 
         <div className="features-outer-right">
           <h2 className="features-outer-right-h2">What we do</h2>
-          <ul>
+          <ul className="features-outer-right-ul">
             {FEATURES.map((f) => (
               <FeatureItem
                 key={f.title}
@@ -51,8 +51,10 @@ const FeatureItem = ({
   return (
     <li className="feature-item-li">
       <div className="feature-item-li-div">
-        <Image src={icon} alt="fetures-icon" width={36} height={36}/>
+        <Image src={icon} alt="fetures-icon" width={40} height={40}/>
       </div>
+      <h2 className="feature-item-h2">{title}</h2>
+      <p className="feature-item-p">{description}</p>
     </li>
   )
 };
