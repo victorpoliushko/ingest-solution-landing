@@ -1,4 +1,5 @@
-import GetApp from '@/components/GetApp'
+
+import ContactUs from '@/components/ContactUs'
 import TestCamp from '@/components/ProjectsHero'
 import TestFeatures from '@/components/TestFeatures'
 import TestGuide from '@/components/TestGuide'
@@ -12,7 +13,7 @@ export default function Home() {
       <TestCamp />
       <TestGuide />
       <TestFeatures />
-      <GetApp />
+      <ContactUs />
     </>
   )
 }
