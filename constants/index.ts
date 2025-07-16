@@ -47,6 +47,15 @@ export const FEATURES = [
   },
 ];
 
+// OUR TEAM
+export const TEAM = [
+  {
+    name: 'Viktor Poliushko',
+    title: 'Main developer',
+    icon: '/photo-glasses.jpg'
+  }
+];
+
 // FOOTER SECTION
 export const FOOTER_LINKS = [
   {
