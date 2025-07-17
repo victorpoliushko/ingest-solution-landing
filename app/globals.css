@@ -1025,7 +1025,6 @@ button {
   color: #e5e7eb;
 }
 
-
 .contact-us-div-inner-columns {
   margin-top: 2.5rem;
   display: grid;
@@ -1043,6 +1042,26 @@ button {
     /* margin: 5rem; */
     gap: 5rem;
   }
+}
+
+.team-member-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-member-image {
+  border-radius: 25px;
+}
+
+.team-name {
+  margin: 1rem;
+  padding: 0;
+}
+
+.team-title {
+  margin: 0;
+  padding: 0;
 }
 
 

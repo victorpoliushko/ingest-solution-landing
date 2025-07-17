@@ -11,7 +11,11 @@ const ContactUs = () => {
             Our team
           </h2>
           {TEAM.map(t => (
-            <Image src={t.icon} alt={t.name} width={300} height={400} />
+            <TeamMember
+              icon={t.icon}
+              name={t.name}
+              title={t.title} 
+            />
           ))}
           
           {/* <div className="contact-us-div-inner-columns">
@@ -24,6 +28,22 @@ const ContactUs = () => {
       </div>
     </section>
   )
+}
+
+type TeamMemberProps = {
+  icon: string;
+  name: string;
+  title: string;
+}
+
+const TeamMember = ({ icon, name, title }: TeamMemberProps) => {
+  return (
+    <div className="team-member-div">
+      <Image className="team-member-image" src={icon} alt={name} width={200} height={280} />
+      <h3 className="team-name">{name}</h3>
+      <p className="team-title">{title}</p>
+    </div>
+  );
 }
 
 export default ContactUs

@@ -53,6 +53,11 @@ export const TEAM = [
     name: 'Viktor Poliushko',
     title: 'Main developer',
     icon: '/photo-glasses.jpg'
+  },
+    {
+    name: 'Bubik Pupik',
+    title: 'Secondary developer',
+    icon: '/photo-glasses.jpg'
   }
 ];
 
