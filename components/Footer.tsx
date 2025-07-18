@@ -2,7 +2,11 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <footer className="footer">
+      <div className="footer-outer">
+        <div className="footer-inner"></div>
+      </div>
+    </footer>
   )
 }
 

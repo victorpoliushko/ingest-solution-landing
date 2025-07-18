@@ -10,13 +10,16 @@ const ContactUs = () => {
           <h2 className='contact-us-div-inner-h2'>
             Our team
           </h2>
-          {TEAM.map(t => (
+          <div className="team-members-list">
+{TEAM.map(t => (
             <TeamMember
               icon={t.icon}
               name={t.name}
               title={t.title} 
             />
           ))}
+          </div>
+          
           
           {/* <div className="contact-us-div-inner-columns">
           <p className='contact-us-div-inner-p'><strong>Email:</strong> ingest.solution@gmail.com</p>
