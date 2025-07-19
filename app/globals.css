@@ -1117,6 +1117,10 @@ button {
   }
 }
 
+.clickable:hover {
+  cursor: pointer;
+}
+
 
 /* 
 

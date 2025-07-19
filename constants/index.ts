@@ -50,14 +50,17 @@ export const FEATURES = [
 // OUR TEAM
 export const TEAM = [
   {
+    id: 1,
     name: 'Viktor Poliushko',
     title: 'Main developer',
     icon: '/photo-glasses.jpg'
   },
-    {
-    name: 'Bubik Pupik',
-    title: 'Secondary developer',
-    icon: '/photo-glasses.jpg'
+  {
+    id: 0,
+    name: 'Become a team member',
+    title: 'send a CV',
+    icon: '/circle-plus-white.svg',
+    clickable: true
   }
 ];
 

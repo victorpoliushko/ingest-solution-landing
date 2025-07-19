@@ -21,7 +21,7 @@ const Navbar = () => {
         <Button 
           type="button"
           title="Contact Us"
-          icon="/phone.png"
+          icon="/phone.svg"
           variant="btn_dark_green"
         />
       </div>

@@ -11,11 +11,13 @@ const ContactUs = () => {
             Our team
           </h2>
           <div className="team-members-list">
-{TEAM.map(t => (
+          {TEAM.map(t => (
             <TeamMember
+              key={t.id}
               icon={t.icon}
               name={t.name}
-              title={t.title} 
+              title={t.title}
+              clickable={t.clickable}
             />
           ))}
           </div>
@@ -37,12 +39,14 @@ type TeamMemberProps = {
   icon: string;
   name: string;
   title: string;
+  clickable?: boolean;
 }
 
-const TeamMember = ({ icon, name, title }: TeamMemberProps) => {
+const TeamMember = ({ icon, name, title, clickable }: TeamMemberProps) => {
+  console.log(clickable)
   return (
-    <div className="team-member-div">
-      <Image className="team-member-image" src={icon} alt={name} width={200} height={280} />
+    <div className='team-member-div'>
+      <Image className={`team-member-image ${clickable ? 'clickable' : ''}`} src={icon} alt={name} width={200} height={280} />
       <h3 className="team-name">{name}</h3>
       <p className="team-title">{title}</p>
     </div>
