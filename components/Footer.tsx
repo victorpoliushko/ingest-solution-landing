@@ -1,4 +1,4 @@
-import { FOOTER_LINKS } from '@/constants'
+import { FOOTER_CONTACT_INFO, FOOTER_LINKS } from '@/constants'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -16,13 +16,23 @@ const Footer = () => {
               <FooterColumn title={col.title}>
                 <ul className="footer-links-ul">
                   {col.links.map(link => (
-                    <Link href='/' key={link}>
-                      {link}
+                    <Link href={link.href} key={link.title}>
+                      {link.title}
                     </Link>
                   ))}
                 </ul>
               </FooterColumn>
             ))}
+            <div className="footer-links-contacts">
+              <FooterColumn title={FOOTER_CONTACT_INFO.title}>
+                {FOOTER_CONTACT_INFO.links.map(link => (
+                  <Link href='/' key={link.label} className='footer-links-contacts-items'>
+                    <p className="footer-links-contacts-items-label">{link.label}:</p>
+                    <p className="footer-links-contacts-items-value">{link.value}</p>
+                  </Link>
+                ))}
+              </FooterColumn>
+            </div>
           </div>
         </div>
       </div>

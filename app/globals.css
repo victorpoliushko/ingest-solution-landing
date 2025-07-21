@@ -1164,6 +1164,40 @@ button {
   white-space: nowrap;
 }
 
+.footer-links-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.footer-links-contacts-items {
+  display: flex;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .footer-links-contacts-items {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer-links-contacts-items {
+    flex-direction: row;
+  }
+}
+
+.footer-links-contacts-items-label {
+  white-space: nowrap;
+}
+
+.footer-links-contacts-items-value {
+  font-weight: 500;
+  font-size: 0.875rem;
+  white-space: nowrap;
+  color: #0e1d45;
+}
+
 
 /* 
 
