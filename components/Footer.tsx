@@ -1,4 +1,4 @@
-import { FOOTER_CONTACT_INFO, FOOTER_LINKS } from '@/constants'
+import { FOOTER_CONTACT_INFO, FOOTER_LINKS, SOCIALS } from '@/constants'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -23,6 +23,7 @@ const Footer = () => {
                 </ul>
               </FooterColumn>
             ))}
+
             <div className="footer-links-contacts">
               <FooterColumn title={FOOTER_CONTACT_INFO.title}>
                 {FOOTER_CONTACT_INFO.links.map(link => (
@@ -33,8 +34,24 @@ const Footer = () => {
                 ))}
               </FooterColumn>
             </div>
+
+            <div className="footer-links-social">
+              <FooterColumn title={SOCIALS.title}>
+                <ul className="footer-links-social-ul">
+                  {SOCIALS.links.map(link => (
+                    <Link href='/' key={link}>
+                      <Image src={link} alt="logo" width={24} height={24} />
+                    </Link>
+                  ))}
+                </ul>
+              </FooterColumn>
+            </div>
           </div>
         </div>
+        <div className="footer-links-rights" />
+        <p className="footer-links-rights-p">
+          2025 Ingest Solution | All rights reserved
+        </p>
       </div>
     </footer>
   )

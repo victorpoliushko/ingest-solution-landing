@@ -1198,6 +1198,35 @@ button {
   color: #0e1d45;
 }
 
+.footer-links-social {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.footer-links-social-ul {
+  font-weight: 400;
+  font-size: 0.875rem;
+  display: flex;
+  gap: 1rem;
+  color: #d1d5db;
+}
+
+.footer-links-rights {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #bbbdc1;
+  background-color: #bbbdc1;
+}
+
+.footer-links-rights-p {
+  font-weight: 400;
+  font-size: 0.875rem;
+  width: 100%;
+  text-align: center;
+  color: #96989c;
+}
+
 
 /* 
 
