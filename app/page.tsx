@@ -1,16 +1,16 @@
 
 import ContactUs from '@/components/ContactUs'
-import TestCamp from '@/components/ProjectsHero'
+import { ProjectsSection } from '@/components/ProjectsSection'
 import TestFeatures from '@/components/TestFeatures'
 import TestGuide from '@/components/TestGuide'
-import TestHero from '@/components/TestHero'
+import { HeroSection } from '@/components/HeroSection'
 import React from 'react'
 
 export default function Home() {
   return (
     <>
-      <TestHero />
-      <TestCamp />
+      <HeroSection />
+      <ProjectsSection />
       <TestGuide />
       <TestFeatures />
       <ContactUs />

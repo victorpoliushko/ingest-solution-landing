@@ -50,7 +50,7 @@ const Project = ({
   </div>)
 };
 
-const ProjectsHero = () => {
+export const ProjectsSection = () => {
   return (
     <section className="projects-hero">
       <div className="projects-hero-element">
@@ -84,5 +84,3 @@ Get in touch today to receive a detailed overview of our services and discover t
     </section>
   );
 };
-
-export default ProjectsHero;
