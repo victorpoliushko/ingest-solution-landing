@@ -52,7 +52,7 @@ const Project = ({
 
 export const ProjectsSection = () => {
   return (
-    <section className="projects-hero">
+    <section id="products" className="projects-hero">
       <div className="projects-hero-element">
         <Project
           backgroundImage={invappBg.src}

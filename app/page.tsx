@@ -1,19 +1,19 @@
 
-import ContactUs from '@/components/ContactUs'
-import { ProjectsSection } from '@/components/ProjectsSection'
-import TestFeatures from '@/components/TestFeatures'
-import TestGuide from '@/components/TestGuide'
-import { HeroSection } from '@/components/HeroSection'
-import React from 'react'
+import { TeamSection } from '@/components/TeamSection';
+import { ProjectsSection } from '@/components/ProjectsSection';
+import { HeroSection } from '@/components/HeroSection';
+import React from 'react';
+import { ServicesSecondSection } from '@/components/ServicesSecondSection';
+import { ServicesSection } from '@/components/ServicesSection';
 
 export default function Home() {
   return (
     <>
       <HeroSection />
       <ProjectsSection />
-      <TestGuide />
-      <TestFeatures />
-      <ContactUs />
+      <ServicesSection />
+      <ServicesSecondSection />
+      <TeamSection />
     </>
   )
 }

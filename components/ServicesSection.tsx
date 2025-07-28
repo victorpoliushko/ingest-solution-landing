@@ -1,9 +1,9 @@
 import Image from "next/image";
 import React from "react";
 
-const TestGuide = () => {
+export const ServicesSection = () => {
   return (
-    <section className="dev-route-block">
+    <section id="services" className="dev-route-block">
       <div className="dev-route-pre-title">
         <p className="dev-route-pre-title-p">How do we work</p>
         <div className="dev-route-title">
@@ -61,5 +61,3 @@ const TestGuide = () => {
     </section>
   );
 };
-
-export default TestGuide;

@@ -47,7 +47,6 @@ export const HeroSection = () => {
             <div className="hero-review-location-div">
               <p className="hero-review-location-title-name">
                 Country
-                {/* <Image src="/close.svg" alt="close" width={24} height={24} /> */}
               </p>
             </div>
             <p className="hero-review-location-title">Ukraine</p>
