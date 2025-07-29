@@ -23,6 +23,7 @@ const Navbar = () => {
           title="Contact Us"
           icon="/phone.svg"
           variant="btn_dark_green"
+          href="#contact-us"
         />
       </div>
 

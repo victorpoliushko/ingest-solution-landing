@@ -24,7 +24,7 @@ const Footer = () => {
               </FooterColumn>
             ))}
 
-            <div className="footer-links-contacts">
+            <div id="contact-us" className="footer-links-contacts">
               <FooterColumn title={FOOTER_CONTACT_INFO.title}>
                 {FOOTER_CONTACT_INFO.links.map(link => (
                   <Link href='/' key={link.label} className='footer-links-contacts-items'>
