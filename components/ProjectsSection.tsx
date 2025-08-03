@@ -1,7 +1,6 @@
 import React from "react";
 import invappBg from  "../public/invapp-bg.png";
-import baSiteBg from "../public/BAsite-bg.png";
-import { PEOPLE_URL } from "@/constants";
+import { PROJECTS } from "@/constants";
 import Image from "next/image";
 
 interface ProjectProps {
@@ -54,20 +53,15 @@ export const ProjectsSection = () => {
   return (
     <section id="products" className="projects-hero">
       <div className="projects-hero-element">
-        <Project
-          backgroundImage={invappBg.src}
-          title="InvApp"
-          subtitle="The only investment tracking app you need"
-          reviews="4 reviews"
-          people={PEOPLE_URL}
-        />
-        <Project
-          backgroundImage={baSiteBg.src}
-          title="InvApp"
-          subtitle="The only investment tracking app you need"
-          reviews="1 review"
-          people={[PEOPLE_URL[0]]}
-        />
+        {PROJECTS.map(p => (
+          <Project
+            backgroundImage={p.background}
+            title={p.title}
+            subtitle={p.subtitle}
+            reviews={p.reviews}
+            people={p.people_url}
+          />
+        ))}
       </div>
 
       <div className="dont-know-block">

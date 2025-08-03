@@ -1,3 +1,6 @@
+import invappBg from  "../public/invapp-bg.png";
+import baBg from  "../public/BAsite-bg.png";
+
 // NAVIGATION
 export const NAV_LINKS = [
   { href: "/", key: "home", label: "Home" },
@@ -5,14 +8,34 @@ export const NAV_LINKS = [
   { href: "#products", key: "products ", label: "Products" },
   { href: "#services", key: "services", label: "Services" },
   { href: "#team", key: "services", label: "Our team" },
-  { href: "/", key: "charity", label: "Charity" }
+  { href: "/", key: "charity", label: "Charity" },
 ];
 
-export const PEOPLE_URL = [
-  "/person-1.png",
-  "/person-2.png",
-  "/person-3.png",
-  "/person-4.png",
+
+export const PROJECTS = [
+  {
+    key: 1,
+    title: "InvApp",
+    subtitle: "The only investment tracking app you need",
+    reviews: "4 reviews",
+    background: invappBg,
+    people_url: [
+      "/person-1.png",
+      "/person-2.png",
+      "/person-3.png",
+      "/person-4.png",
+    ]
+  },
+  {
+    key: 2,
+    title: "BA landing",
+    subtitle: "Business analyst for your projects",
+    reviews: "1 review",
+    background: baBg,
+    people_url: [
+      "/person-3.png"
+    ]
+  },
 ];
 
 // FEATURES SECTION
@@ -70,7 +93,7 @@ export const FOOTER_LINKS = [
     title: "Learn More",
     links: [
       { title: "About Ingest Solution", href: "/about" },
-      { title: "Privacy Policy", href: "/policies" }
+      { title: "Privacy Policy", href: "/policies" },
     ],
   },
   {
