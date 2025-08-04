@@ -4,10 +4,9 @@ import baBg from  "../public/BAsite-bg.png";
 // NAVIGATION
 export const NAV_LINKS = [
   { href: "/", key: "home", label: "Home" },
-
   { href: "#products", key: "products ", label: "Products" },
   { href: "#services", key: "services", label: "Services" },
-  { href: "#team", key: "services", label: "Our team" },
+  { href: "#team", key: "team", label: "Our team" },
   { href: "/", key: "charity", label: "Charity" },
 ];
 
@@ -18,7 +17,7 @@ export const PROJECTS = [
     title: "InvApp",
     subtitle: "The only investment tracking app you need",
     reviews: "4 reviews",
-    background: invappBg,
+    background: invappBg.src,
     people_url: [
       "/person-1.png",
       "/person-2.png",
@@ -31,7 +30,7 @@ export const PROJECTS = [
     title: "BA landing",
     subtitle: "Business analyst for your projects",
     reviews: "1 review",
-    background: baBg,
+    background: baBg.src,
     people_url: [
       "/person-3.png"
     ]
