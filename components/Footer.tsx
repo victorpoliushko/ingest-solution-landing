@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="footer-outer">
         <div className="footer-inner">
           <Link href='/' className="footer-link">
-            <Image src='/ingest_solution_logo.png' alt='logo' width={120} height={60}/>
+            <Image src='/text-logo-black.svg' alt='logo' width={120} height={60}/>
           </Link>
           <div className="footer-links-div">
             {FOOTER_LINKS.map(col => (

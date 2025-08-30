@@ -174,7 +174,7 @@ button {
 @media (min-width: 1280px) {
   section.hero-section {
     flex-direction: row;
-  }
+  } 
 }
 
 @media (min-width: 1680px) {

@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <Link href="/">
-        <Image src="/ingest_solution_logo.png" alt="logo" width={274} height={150}/>
+        <Image src="/text-logo-black.svg" alt="logo" width={130} height={80}/>
       </Link>
       <ul className="navbar-ul">
         {NAV_LINKS.map(link => (
