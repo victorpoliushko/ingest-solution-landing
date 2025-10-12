@@ -1,6 +1,6 @@
 import React from "react";
 import { PROJECTS } from "@/constants";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 
 interface ProjectProps {
   backgroundImage: string;
