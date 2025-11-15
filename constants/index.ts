@@ -10,6 +10,10 @@ export const NAV_LINKS = [
   { href: "/", key: "charity", label: "Charity" },
 ];
 
+enum Type {
+  PRODUCT = 'product',
+  SERVICE = 'service'
+}
 
 export const PROJECTS = [
   {
@@ -23,7 +27,8 @@ export const PROJECTS = [
       "/person-2.png",
       "/person-3.png",
       "/person-4.png",
-    ]
+    ],
+    type: Type.PRODUCT
   },
   {
     key: 2,
@@ -33,7 +38,8 @@ export const PROJECTS = [
     background: baBg.src,
     people_url: [
       "/person-3.png"
-    ]
+    ],
+    type: Type.SERVICE
   },
 ];
 

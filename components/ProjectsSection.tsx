@@ -8,6 +8,7 @@ interface ProjectProps {
   subtitle: string;
   reviews: string;
   people: string[];
+  type: 'product' | 'service'
 }
 
 const Project = ({
@@ -16,16 +17,17 @@ const Project = ({
   subtitle,
   reviews,
   people,
+  type
 }: ProjectProps) => {
   return (
     <div
       className="project"
-      style={{ backgroundImage: `url(${backgroundImage})` }}
+      style={{ backgroundImage: `url(${backgroundImage})`}}
     >
       <div className="project-title-block">
         <div className="project-title-block-2">
           <div className="project-title-block-3">
-            <h4>Product</h4>
+            {type === 'product' ? <h4>Product</h4> : <h4>Service</h4>}
           </div>
           <div className="project-title-text">
             <h4 className="project-title-text-title">{title}</h4>
@@ -65,6 +67,7 @@ export const ProjectsSection = () => {
             subtitle={p.subtitle}
             reviews={p.reviews}
             people={p.people_url}
+            type={p.type}
           />
         ))}
       </div>
