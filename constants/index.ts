@@ -101,14 +101,14 @@ export const FOOTER_LINKS = [
       { title: "Privacy Policy", href: "/policies" },
     ],
   },
-  {
-    title: "Our Community",
-    links: [
-      { title: "lorem", href: "lorem" },
-      { title: "ipsum", href: "ipsum" },
-      { title: "dolor", href: "dolor" },
-    ],
-  },
+  // {
+  //   title: "Our Community",
+  //   links: [
+  //     { title: "lorem", href: "lorem" },
+  //     { title: "ipsum", href: "ipsum" },
+  //     { title: "dolor", href: "dolor" },
+  //   ],
+  // },
 ];
 
 export const FOOTER_CONTACT_INFO = {
