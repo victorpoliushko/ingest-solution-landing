@@ -437,11 +437,23 @@ button {
 }
 
 .project {
-  height: 100%;
   width: 100%;
   min-width: 1100px;
   background-size: cover;
   background-repeat: no-repeat;
+  height: 340px;
+}
+
+@media (min-width: 1024px) {
+  .project {
+    height: 400px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .project {
+    height: 520px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -455,6 +467,17 @@ button {
   .project {
     border-radius: 2.5rem;
   }
+}
+.project-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.project-header-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .project-title-block {
@@ -498,13 +521,13 @@ button {
 .project-title-text-title {
   font-size: 18px;
   font-weight: 700;
-  color: #fff;
+  color: #000;
 }
 
 .project-title-text-subtitle {
   font-size: 14px;
   font-weight: 400;
-  color: #fff;
+  color: #000;
 }
 
 .people-block {
@@ -533,7 +556,7 @@ button {
 .people-text {
   font-size: 16px;
   font-weight: 700;
-  color: #fff;
+  color: #000;
 }
 
 @media (min-width: 768px) {

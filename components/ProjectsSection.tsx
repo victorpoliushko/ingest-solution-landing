@@ -8,7 +8,7 @@ interface ProjectProps {
   subtitle: string;
   reviews: string;
   people: string[];
-  type: 'product' | 'service'
+  type: "product" | "service";
 }
 
 const Project = ({
@@ -17,43 +17,51 @@ const Project = ({
   subtitle,
   reviews,
   people,
-  type
+  type,
 }: ProjectProps) => {
   return (
-    <div
-      className="project"
-      style={{ backgroundImage: `url(${backgroundImage})`}}
-    >
-      <div className="project-title-block">
-        <div className="project-title-block-2">
-          <div className="project-title-block-3">
-            {type === 'product' ? <h4>Product</h4> : <h4>Service</h4>}
-          </div>
-          <div className="project-title-text">
-            <h4 className="project-title-text-title">{title}</h4>
-            <p className="project-title-text-subtitle">{subtitle}</p>
-          </div>
+    <div className="project-wrapper">
+
+      {/* TEXT ROW */}
+      <div className="project-header-row">
+        <div className="project-title-block-3">
+          {type === "product" ? <h4>Product</h4> : <h4>Service</h4>}
         </div>
 
-        <div className="people-block">
-          <span className="people-block-1">
-            {people.map((url) => (
-              <Image
-                className="people-image"
-                src={url}
-                key={url}
-                alt="person"
-                width={52}
-                height={52}
-              />
-            ))}
-          </span>
-          <p className="people-text">{reviews}</p>
+        <div className="project-title-text">
+          <h4 className="project-title-text-title">{title}</h4>
+          <p className="project-title-text-subtitle">{subtitle}</p>
         </div>
       </div>
+
+      {/* BACKGROUND IMAGE */}
+      <div
+        className="project"
+        style={{ backgroundImage: `url(${backgroundImage})` }}
+      />
+
+      {/* PEOPLE UNDER IMAGE */}
+      <div className="people-block">
+        <span className="people-block-1">
+          {people.map((url) => (
+            <Image
+              className="people-image"
+              src={url}
+              key={url}
+              alt="person"
+              width={52}
+              height={52}
+            />
+          ))}
+        </span>
+        <p className="people-text">{reviews}</p>
+      </div>
+
     </div>
   );
 };
+
+
 
 export const ProjectsSection = () => {
   return (
