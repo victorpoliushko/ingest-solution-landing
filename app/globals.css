@@ -412,7 +412,8 @@ button {
   -ms-overflow-style: none;
   scrollbar-width: none;
   display: flex;
-  height: 340px;
+  min-height: 340px;
+  height: auto; 
   width: 100%;
   align-items: flex-start;
   justify-content: flex-start;
@@ -426,13 +427,13 @@ button {
 
 @media (min-width: 1024px) {
   .projects-hero-element {
-    height: 400px;
+    min-height: 400px;
   }
 }
 
 @media (min-width: 1280px) {
   .projects-hero-element {
-    height: 640px;
+    min-height: 640px;
   }
 }
 
