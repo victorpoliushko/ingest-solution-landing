@@ -21,8 +21,6 @@ const Project = ({
 }: ProjectProps) => {
   return (
     <div className="project-wrapper">
-
-      {/* TEXT ROW */}
       <div className="project-header-row">
         <div className="project-title-block-3">
           {type === "product" ? <h4>Product</h4> : <h4>Service</h4>}
@@ -34,13 +32,11 @@ const Project = ({
         </div>
       </div>
 
-      {/* BACKGROUND IMAGE */}
       <div
         className="project"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       />
 
-      {/* PEOPLE UNDER IMAGE */}
       <div className="people-block">
         <span className="people-block-1">
           {people.map((url) => (
