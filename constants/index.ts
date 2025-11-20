@@ -98,7 +98,7 @@ export const FOOTER_LINKS = [
     title: "Learn More",
     links: [
       { title: "About Ingest Solution", href: "/about" },
-      { title: "Privacy Policy", href: "/policies" },
+      { title: "Privacy Policy", href: "/privacy" },
     ],
   },
   // {

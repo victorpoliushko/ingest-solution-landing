@@ -1253,6 +1253,20 @@ button {
   color: #96989c;
 }
 
+.about-description {
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 400;
+  margin-top: 2rem;
+  color: #7b7b7b;
+}
+
+/* @media (min-width: 1280px) {
+  .about-description {
+    max-width: 520px;
+  }
+} */
+
 /* 
 
 @layer utilities {
