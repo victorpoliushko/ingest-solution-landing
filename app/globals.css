@@ -1261,6 +1261,14 @@ button {
   color: #7b7b7b;
 }
 
+.privacy-content {
+  padding-left: 20px;  
+  margin-top: 2rem;
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
 /* @media (min-width: 1280px) {
   .about-description {
     max-width: 520px;

@@ -4,9 +4,9 @@ import baBg from  "../public/BAsite-bg.png";
 // NAVIGATION
 export const NAV_LINKS = [
   { href: "/", key: "home", label: "Home" },
-  { href: "#products", key: "products ", label: "Products" },
-  { href: "#services", key: "services", label: "Services" },
-  { href: "#team", key: "team", label: "Our team" },
+  { href: "/#products", key: "products ", label: "Products" },
+  { href: "/#services", key: "services", label: "Services" },
+  { href: "/#team", key: "team", label: "Our team" },
   { href: "/", key: "charity", label: "Charity" },
 ];
 
